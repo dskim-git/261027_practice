@@ -1,13 +1,123 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>261027_practice</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f0e6" />
+  <meta name="description" content="한 사람의 생각과 작업을 담은 자기소개 페이지입니다." />
+  <title>나를 소개합니다 — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="처음으로">MY<br />WORLD<span>✳</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="메뉴 열기"><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="주요 메뉴">
+        <a href="#about">ABOUT</a><a href="#interests">THINGS I LOVE</a><a href="#contact">SAY HELLO <span>↗</span></a>
+      </nav>
+      <span class="header-note">A LITTLE INTRODUCTION · 2026</span>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="sun-dot"></span> 안녕하세요, 저는 <span class="name-placeholder">Ds Kim</span>입니다
+          </p>
+          <h1 id="hero-title">사소한 순간에서<br />좋은 <em>이야기</em>를<br />발견합니다<span class="period">.</span></h1>
+          <div class="hero-bottom">
+            <p class="hero-description">호기심을 따라 배우고, 좋아하는 것들을<br class="desktop-break" /> 제 방식으로 오래 바라보는 사람입니다.</p>
+            <a class="round-link" href="#about" aria-label="소개 더 보기">↓</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="해와 식물이 있는 추상적인 정물화" role="img">
+          <div class="art-paper"><span class="art-label">FIG. 01<br />A PORTRAIT OF ME</span><span
+              class="art-sun"></span><span class="art-vase vase-one"></span><span class="art-vase vase-two"></span><span
+              class="art-stem stem-one"></span><span class="art-stem stem-two"></span><span
+              class="art-leaf leaf-one"></span><span class="art-leaf leaf-two"></span><span
+              class="art-leaf leaf-three"></span><span class="art-leaf leaf-four"></span><span
+              class="art-table"></span><span class="art-signature">in progress ✳</span></div>
+          <span class="art-caption">MADE OF MANY LITTLE THINGS</span>
+        </div>
+        <div class="hero-index"><span>01 / 03</span><span>SCROLL TO EXPLORE ↓</span></div>
+      </section>
+
+      <section class="about section-grid" id="about">
+        <div class="section-label"><span>01</span><span>THE PERSON</span></div>
+        <div class="about-content">
+          <p class="eyebrow">A NOTE ABOUT ME</p>
+          <h2>반가워요.<br />저는 <span>Ds Kim</span>이에요.</h2>
+          <p class="body-copy">서울에서 지내며 고등학교에서 수학을 가르치고 있어요. 새로운 것을 배우고, 좋아하는 사람들과 맛있는 것을 나누는 시간을 좋아합니다. 이곳에 저를 조금 더
+            잘 설명하는 이야기를 천천히 채워갈게요.</p>
+          <p class="hand-note">천천히, 제 이야기를 적어볼게요 <span>↗</span></p>
+        </div>
+        <aside class="about-facts">
+          <div><span class="fact-number">01</span>
+            <p><b>NOW</b><br />AI와 프로그래밍</p>
+          </div>
+          <div><span class="fact-number">02</span>
+            <p><b>FROM</b><br />SEOUL</p>
+          </div>
+          <div><span class="fact-number">03</span>
+            <p><b>KNOWN FOR</b><br />[나를 설명하는 키워드]</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="interests" id="interests">
+        <div class="interests-heading">
+          <div class="section-label"><span>02</span><span>THE LITTLE JOYS</span></div>
+          <p class="eyebrow">A FEW OF MY FAVORITE THINGS</p>
+          <h2>나를 기분 좋게 하는 것들<span class="period">.</span></h2>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card card-coral"><span class="card-index">NO. 01</span><span
+              class="card-drawing drawing-book">✳</span>
+            <div>
+              <h3>[좋아하는 것 하나]</h3>
+              <p>마음에 오래 남는 이유를 한 줄로 적어보세요.</p>
+            </div><span class="card-arrow">↗</span>
+          </article>
+          <article class="interest-card card-blue"><span class="card-index">NO. 02</span><span
+              class="card-drawing drawing-coffee">☼</span>
+            <div>
+              <h3>[좋아하는 것 둘]</h3>
+              <p>작은 취향에도 나다운 이야기가 있어요.</p>
+            </div><span class="card-arrow">↗</span>
+          </article>
+          <article class="interest-card card-green"><span class="card-index">NO. 03</span><span
+              class="card-drawing drawing-flower">✿</span>
+            <div>
+              <h3>[좋아하는 것 셋]</h3>
+              <p>요즘 새롭게 빠져 있는 것도 좋아요.</p>
+            </div><span class="card-arrow">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-grid" id="contact">
+        <div class="section-label"><span>03</span><span>THE NEXT CHAPTER</span></div>
+        <div class="contact-content">
+          <p class="eyebrow">GOOD THINGS START WITH HELLO</p>
+          <h2>당신의 이야기도<br />들려주세요<span class="period">.</span></h2>
+          <p class="body-copy">함께 나누고 싶은 이야기나 반가운 인사가 있다면 편하게 연락해 주세요.</p><a class="contact-link"
+            href="mailto:daesobi1@gmail.com">daesobi1@gmail.com <span>↗</span></a>
+        </div>
+        <div class="contact-stamp">LET'S<br />MAKE<br />SOMETHING<br />GOOD <span>✳</span></div>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="wordmark" href="#home">MY<br />WORLD<span>✳</span></a>
+      <p>이 페이지는 Ds Kim의 작은 세계를 담고 있어요.</p><span>© <span id="year"></span> Ds Kim · MADE WITH CURIOSITY</span>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
